@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form/Formulario/NUCBA</title>
+  </head>
+  <body>
+    <h1>HTML Form/Formulario/NUCBA</h1>
+    <h3>Jacqueline Moreno</h3>
+    <form action="./form-result.php" method="POST" target="_self">
+      <!--Indica el inicio del Formulario-->
+      <ul>
+        <li>
+          <!--Input de texto con label-->
+          <label for="nombre">Nombre: </label><br /><input
+            type="text"
+            name="nombre"
+          />
+        </li>
+        <li>
+          <!--Input de texto-->
+          <label for="apellido">Apellido: </label><br /><input
+            type="text"
+            name="apellido"
+          />
+        </li>
+        <li>
+          <!--Input númerico con label-->
+          <label for="edad">Edad: </label><br /><input
+            type="number"
+            name="edad"
+          /><br /><br />
+        </li>
+
+        <li>
+          <!--Email/Password-->
+          <label for="Email de Usuario">Email de Usuario:</label><br />
+          <input
+            type="text"
+            id="Email de Usuario"
+            name="Email de Usuario"
+          /><br />
+          <label for="Contraseña">Contraseña:</label><br />
+          <input
+            type="password"
+            id="Contraseña"
+            name="Contraseña"
+          /><br /><br />
+        </li>
+
+        <li>
+          <!--CheckBox-->
+          <label for="checkbox">Seleccion la Ocupación que tenga:</label>
+          <br /><input
+            type="checkbox"
+            id="Ocupacion1"
+            name="Ocupacion1"
+            value="Estudiante"
+          />
+          <label for="Ocupacion1"> Estudiante</label>
+          <input
+            type="checkbox"
+            id="Ocupacion2"
+            name="Ocupacion2"
+            value="Profesional"
+          />
+
+          <label for="Ocupacion2"> Profesional</label>
+          <input
+            type="checkbox"
+            id="Ocupacion3"
+            name="Ocupacion3"
+            value="Otro"
+          />
+          <label for="Ocupacion3"> Otro</label><br /><br />
+        </li>
+
+        <li>
+          <!--Select-->
+          <label for="contacto"> Hora de contacto:</label><br />
+          <select name="contacto">
+            <option value="A la mañana">A la mañana</option>
+            <!--Item Select-->
+            <option value="Al mediodía">Al mediodía</option>
+            <option value="o a la tarde">o a la tarde</optio>
+            <!--Item Select-->
+            </select><br /><br />
+        </li>
+
+        <li>
+          <!--Textarea-->
+          <textarea name="comment" rows="2" cols="25">Dejar un comentario...</textarea><br /><br />
+        </li>
+
+        <li>
+          <!--RadioButtom-->
+          <label for="Email"
+            >Desea recibir más información en su casilla de correo :</label
+          ><br />
+          <input type="radio" id="Si" name="Email" value="Si" />
+          <label for="Si">Si</label>
+
+          <input type="radio" id="No" name="Email" value="No" />
+          <label for="No">No</label><br /><br />
+        </li>
+
+        <li>
+          <!--Botón de envio del formulario-->
+          <input type="submit" value="Enviar" />
+        </li>
+      </ul>
+    </form>
+    <!--Indica el fin del Formulario-->
+  </body>
+</html>
